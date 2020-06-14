@@ -1,9 +1,9 @@
 version: '3.5'
 
 services:
-  NAME:
+  greylist:
     build: "."
-    image: USER/NAME:testing
+    image: guard13007/greylist:testing
     environment:
       - SESSION_SECRET=${SESSION_SECRET:-CHANGEME}
       - POSTGRES_HOST=${POSTGRES_HOST:-postgres}
